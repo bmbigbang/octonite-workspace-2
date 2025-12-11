@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button, Typography, Stack, Box } from '@mui/material';
+import { Home, Settings, Person, Menu, Search, Favorite, Add, Delete } from '@mui/icons-material';
 
 const meta = {
     title: 'Octonite/Design Tokens',
@@ -42,6 +43,22 @@ export const TokenShowcase: Story = {
                 </Typography>
                 <Typography variant="h1">Heading 1</Typography>
                 <Typography variant="body1">Body 1 text using the design system font family and size.</Typography>
+            </Box>
+            <Box>
+                <Typography variant="h4" gutterBottom>Iconography</Typography>
+                <Typography paragraph>
+                    Common icons used in the application, demonstrating consistency with the design system.
+                </Typography>
+                <Stack direction="row" spacing={4} alignItems="center">
+                    <Stack alignItems="center" spacing={1}><Home fontSize="large" /><Typography variant="caption">Home</Typography></Stack>
+                    <Stack alignItems="center" spacing={1}><Settings fontSize="large" /><Typography variant="caption">Settings</Typography></Stack>
+                    <Stack alignItems="center" spacing={1}><Person fontSize="large" /><Typography variant="caption">Person</Typography></Stack>
+                    <Stack alignItems="center" spacing={1}><Menu fontSize="large" /><Typography variant="caption">Menu</Typography></Stack>
+                    <Stack alignItems="center" spacing={1}><Search fontSize="large" /><Typography variant="caption">Search</Typography></Stack>
+                    <Stack alignItems="center" spacing={1}><Favorite fontSize="large" /><Typography variant="caption">Favorite</Typography></Stack>
+                    <Stack alignItems="center" spacing={1}><Add fontSize="large" /><Typography variant="caption">Add</Typography></Stack>
+                    <Stack alignItems="center" spacing={1}><Delete fontSize="large" /><Typography variant="caption">Delete</Typography></Stack>
+                </Stack>
             </Box>
         </Stack>
     ),
