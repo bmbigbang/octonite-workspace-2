@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Button, Typography, Stack, Box } from '@mui/material';
 import { Home, Settings, Person, Menu, Search, Favorite, Add, Delete } from '@mui/icons-material';
 
